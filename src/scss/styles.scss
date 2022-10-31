@@ -5,49 +5,138 @@
 
 body {
   height:100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
  
-  nav {
-    font-size:1.5rem;
+  .nav {
+    position:fixed;
+    top:0;
     display:flex;
-    border-bottom:$reg;
-    box-shadow: 0px 1px 50px 50px rgba(0, 0, 0, 0.2);
-    ul {
-      display:flex;
-    }
-  }
-  .container {
-    display:flex;
+    justify-content: space-between;
+    // border-bottom:$reg;
+    // box-shadow: 0px 1px 50px 50px rgba(0, 0, 0, 0.2);
     width:100%;
-    height:500vh;
-    a{
-      color:$link_text;
-    }
-    .photo{
+    height:5vh;
+    .menu {
+      width:33%;
       display:flex;
-      flex-direction: column; 
-      width:50%;
+      align-items: center;
+      justify-content: space-evenly;
       
-      img{
-        height:100vh;        
+      .menu_li{
+        display:flex;
+        justify-content: space-evenly;
+        width:33%;
+      }
+    } 
+    .logo,
+    .search {
+      width:33%;
+      display: flex;
+      align-items: center;
+      // align-items: center;
+    }
+    .logo{
+      justify-content: center;
+      #logo{
+        height:100%;
+      }      
+    }
+    .search{
+      justify-content: center;
+      .fa-solid{
+        margin-left:30%;
+        font-size:1.5rem;
       }
     }
-    .text {
-      margin-left:50%;
-      width:50%;
-      // display:flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // justify-items: center;
-    }
-    .text_main{
-      font-size:1.5rem;
-      background-color:$main_bg;
-      color:$text;
-    }
+  }
 
-    .text_sub{
-      font-size:0.8rem;
+  .container {
+    display:flex;
+    flex-direction: column;
+    height:600vh;
+    .content{
+      display:flex;
+      width:100%;
+      height:100vh;
+      .photo{
+        width:50%;      
+        object-fit:cover;
+      }
+      .text {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width:50%;
+      }
+      .text_main{
+        width:$content_text_width;
+        font-size:2.8rem;
+        font-weight:550;
+        line-height: 1.2;
         color:$text;
+      }
+      
+      .text_sub{
+        margin-top:5%;
+        width:$content_text_width;
+        font-size:0.8rem;
+        color:$text;
+        a{
+            color:$link_text;
+            font-weight: 550;
+            text-decoration: underline;
+        }
+      }
     }
-}
+    .message{
+      background-color:#efcb56;
+      height:100vh;
+    }
+  }
+  .ad_link{
+    height:100vh;
+    display:flex;
+    flex-wrap:wrap;
+    
+    .item{
+      border:1px solid #fff;
+      .text{
+        
+        
+        .item_text{
+          margin-top:10%;
+          font-size:1.5rem;
+        }
+      }
+    }
+    .item{
+      display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size:cover;
+    }
+    .item_lg{
+      width:50%;
+      background-image: url(https://tolv.dk/wp-content/uploads/2019/07/Cherry-Sofa-Lookbook-3-web@2x.jpg);
+    }
+    .item_sm{
+      width:25%;
+      background-image: url(https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg);
+    }
+    .item_sm_2{
+      width:25%;
+      background-image: url(https://tolv.dk/wp-content/uploads/2019/07/Inlay-Chair-Lookbook-61-web@2x.jpg);
+    }
+  }
+    
+  footer{
+    background-color: #535851;
+    height:100vh;
+    display:flex;
+    
+  }
 }
