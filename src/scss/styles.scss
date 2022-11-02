@@ -4,6 +4,7 @@
 
 
 body {
+  width:100%;
   height:100vh;
   font-family: Georgia, 'Times New Roman', Times, serif;
   
@@ -153,38 +154,34 @@ body {
         }
     }
   }
-
-  // .ad_link{
-  //   height:100vh;
-  //   display:flex;
-  //   flex-wrap:wrap;
-    
-  //   .item{
-        
-        
-  //     }
-  //   }
-  //   .item{
-  //       background-size:cover;
-  //   }
-  //   .item_lg{
-  //     width:50%;
-  //     background-image: url(https://tolv.dk/wp-content/uploads/2019/07/Cherry-Sofa-Lookbook-3-web@2x.jpg);
-  //   }
-  //   .item_sm{
-  //     width:25%;
-  //     background-image: url(https://tolv.dk/wp-content/uploads/2019/07/Figura-chair-blackoak_2-web@2x.jpg);
-  //   }
-  //   .item_sm_2{
-  //     width:25%;
-  //     background-image: url(https://tolv.dk/wp-content/uploads/2019/07/Inlay-Chair-Lookbook-61-web@2x.jpg);
-  //   }
-  // }
     
   footer{
     background-color: #535851;
+    width:100%;
     height:100vh;
-    display:flex;
-    
+    color:#fff;
+    #footer{
+      padding:40% 10% 0 10%;
+      display:flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      align-items: center;
+      .info{
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: end;
+        gap:30px auto;
+        &:nth-child(@child){
+          margin-bottom:10px;
+        }
+      }
+      .copyright{
+        width:100%;
+        margin-top: 10%;
+        
+        
+      }
+    }
   }
 }
