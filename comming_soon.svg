@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 350 350">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 120px;
+        text-anchor: middle;
+        font-family: NanumSquare;
+      }
+    </style>
+  </defs>
+  <text id="COMING_SOON" data-name="COMING SOON" class="cls-1" transform="matrix(0.402, 0.287, -0.111, 0.828, 171.208, 201.048)"><tspan x="0">COMING SOON</tspan></text>
+</svg>

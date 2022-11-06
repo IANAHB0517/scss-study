@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="350" viewBox="0 0 350 350">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 120px;
+        text-anchor: middle;
+        font-family: NanumSquare;
+      }
+    </style>
+  </defs>
+  <text id="T" class="cls-1" x="306" y="340"><tspan x="306">T</tspan></text>
+  <text id="X" class="cls-1" x="177" y="340"><tspan x="177">X</tspan></text>
+  <text id="O" class="cls-1" x="43" y="340"><tspan x="43">O</tspan></text>
+  <text id="N" class="cls-1" x="306" y="214"><tspan x="306">N</tspan></text>
+  <text id="B" class="cls-1" x="41" y="210"><tspan x="41">B</tspan></text>
+  <text id="I" class="cls-1" x="306" y="88"><tspan x="306">I</tspan></text>
+  <text id="A" class="cls-1" x="177" y="89"><tspan x="177">A</tspan></text>
+  <text id="P" class="cls-1" x="40" y="86"><tspan x="40">P</tspan></text>
+</svg>

@@ -6,10 +6,22 @@
   background-color: #075725;
   ul{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height:100vh;
     width:100vw;
+    li{
+      width:200px;
+      height:200px;
+      a{
+        // height:100%;
+        // width:100%;
+        img{
+          height:100%;
+          width:100%;
+        }
+      }
+    }
   }
 }
 
