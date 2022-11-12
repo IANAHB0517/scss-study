@@ -284,15 +284,12 @@
   #sections{
     section{
       margin: $card-gap 0;
+      height: 80vh;
     }
     .card_newest{
       background-image: url(https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Untitled-1_c7130e00-ea87-40e1-a45d-39231d736703_1600x929_crop_center.jpg?v=1666814954);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      display:flex;
-      flex-direction: column;
-      justify-content:center;
-      align-items: center;
+      @include background-set();
+      @include flex-column();
       color:#fff;
       padding:5%;
       span{
@@ -312,19 +309,17 @@
     }
     .card_info{
       display: flex;
-      height: 60vh;
+      
       .card_info_l{
         display:block;
         width: 50%;
         background-image: url(https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Untitled-5_37d32faa-1124-4e55-8e66-a0698bc2f0e9_640x640_crop_center.jpg?v=1661907135);
+        @include background-set();
       }
       .card_info_r{
         background-color: #f3ede8;
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex-column();
         span{
           text-align: center;
           margin-bottom:$card-gap;
@@ -344,6 +339,25 @@
         }
         .btn{
           border: 1px solid #000;
+        }
+      }
+    }
+    .card_shop{
+      @include flex-column();
+      width:100vw;
+      span{
+        margin-bottom: $card-gap;
+      }
+      .items{
+      display:flex;
+      flex-direction: row;
+        .item{
+          @include flex-column();
+          width:33%;
+          height:40%;
+          img{
+            width: 100%;
+          }
         }
       }
     }
