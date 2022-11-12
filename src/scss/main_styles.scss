@@ -2,6 +2,8 @@
 @import "_variables";
 @import "_mixins";
 
+
+
 #ref_home{
   background-color: #075725;
   ul{
@@ -285,6 +287,7 @@
     section{
       margin: $card-gap 0;
       height: 80vh;
+      border:1px solid #000;
     }
     .card_newest{
       background-image: url(https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Untitled-1_c7130e00-ea87-40e1-a45d-39231d736703_1600x929_crop_center.jpg?v=1666814954);
@@ -344,20 +347,39 @@
     }
     .card_shop{
       @include flex-column();
-      width:100vw;
+      width:100%;
       span{
         margin-bottom: $card-gap;
+      }
+      .btn{
+        border: 1px solid #000;
       }
       .items{
       display:flex;
       flex-direction: row;
+      justify-content: space-evenly;
+      width:100%;
         .item{
           @include flex-column();
           width:33%;
           height:40%;
-          img{
+         a{
+          .item_img{
+            @include background-set();
             width: 100%;
+            height:40vh;
           }
+          .item1{
+            background-image: url(https://cdn.shopify.com/s/files/1/0086/4865/4895/products/PowerCouple-Babe_CoralBottlesPDP-1_600x800_crop_center.png?v=1655256205);
+            
+          }
+          .item2{
+            
+          }
+          .item3{
+            
+          }
+        }
         }
       }
     }
