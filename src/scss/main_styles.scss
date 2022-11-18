@@ -249,6 +249,13 @@
     // width:100%;
     padding:3vh 10vw;
     border: 1px solid #fff;
+    transition: color 1s linear, background-color 1s linear;
+    &:hover{
+      color:#635610;
+      background-color: #d4c6c1;
+      transition: color 1s linear background-color 1s linear;
+
+    }
   }
   .info_bar{
     padding: 2vw 0;
@@ -353,6 +360,7 @@
       }
       .btn{
         border: 1px solid #000;
+        @include flex-column();
       }
       .items{
       display:flex;
@@ -371,13 +379,12 @@
           }
           .item1{
             background-image: url(https://cdn.shopify.com/s/files/1/0086/4865/4895/products/PowerCouple-Babe_CoralBottlesPDP-1_600x800_crop_center.png?v=1655256205);
-            
           }
           .item2{
-            
+            background-image: url(https://cdn.shopify.com/s/files/1/0086/4865/4895/products/PowerCouple-Babe_CoralBottlesPDP-1_320x400_crop_center.png?v=1655256205);
           }
           .item3{
-            
+            background-image: url(https://cdn.shopify.com/s/files/1/0086/4865/4895/products/PowerCouple-Canyon_ElectricBottlesPDP_600x800_crop_center.png?v=1626231644);
           }
         }
         }
